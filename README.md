@@ -34,14 +34,14 @@ json_float(stringJson, "height", height); -> return  -> 120.0
 
 new field[...];
 for(new i = 0; i < json_array_length(stringJson, "arrayWithObject"); i++) {
-   json_array_get(stringJson, "arrayWithObject", i, field);
+    json_array_get(stringJson, "arrayWithObject", i, field);
 
     // Now you can use the same methods above
     new discord[...];
-    json_string(stringJson, "discord", discord); -> return -> "samp-lab" if two index "central studios"
+    json_string(field, "discord", discord); -> return -> "samp-lab" if two index "central studios"
   
     new players;
-    json_int(stringJson, "players", players); -> return -> 22 if two index 45
+    json_int(field, "players", players); -> return -> 22 if two index 45
 }
 ```
 
