@@ -52,7 +52,7 @@ bool:json_string(const jsonStr[], const key[], value[], const size = sizeof(valu
 bool:json_int(const jsonStr[], const key[], &value)
 bool:json_float(const jsonStr[], const key[], &Float:value)
 bool:json_bool(const jsonStr[], const key[], &:value)
-bool:json_array_length(const jsonStr[], const key[])
+json_array_length(const jsonStr[], const key[])
 bool:json_array_get(const jsonStr[], const key[], index, value[], const size = sizeof(value))
 ```
 
