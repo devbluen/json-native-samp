@@ -47,11 +47,13 @@ for(new i = 0; i < json_array_length(stringJson, "arrayWithObject"); i++) {
 
 # 🚀 Natives
 ```pawn
-json_string(const jsonStr[], const key[], value[], const size = sizeof(value))
-json_int(const jsonStr[], const key[], &value)
-json_float(const jsonStr[], const key[], &Float:value)
-json_array_length(const jsonStr[], const key[])
-json_array_get(const jsonStr[], const key[], index, value[], const size = sizeof(value))
+bool:json_has_key(const jsonStr[], const key[]);
+bool:json_string(const jsonStr[], const key[], value[], const size = sizeof(value))
+bool:json_int(const jsonStr[], const key[], &value)
+bool:json_float(const jsonStr[], const key[], &Float:value)
+bool:json_bool(const jsonStr[], const key[], &:value)
+bool:json_array_length(const jsonStr[], const key[])
+bool:json_array_get(const jsonStr[], const key[], index, value[], const size = sizeof(value))
 ```
 
 # 🤍 Thanks
