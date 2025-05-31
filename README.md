@@ -17,7 +17,7 @@ This include will help you read JSON without needing plugins. For now this inclu
       "discord": "central studios",
       "players": 45  
     }
-  ],
+  ]
 }
 ```
 
